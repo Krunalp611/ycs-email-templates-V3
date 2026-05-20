@@ -260,8 +260,14 @@
     text-transform: uppercase;
     margin-bottom: 4px;
   }
-
-  .card-title {
+  .mail-subject {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 8px;
+    line-height: 1.3;
+  }
+  .card-title{
     font-family: 'Ledger', Georgia, serif;
     font-size: 17px;
     color: var(--ink);
@@ -616,6 +622,7 @@
       </div>
       <div class="card-body">
         <div class="card-number">Email 02</div>
+        <div class="mail-subject"><span style="color: #6B6560;">Email-Subject:</span> One form stands between you and a live platform.</div>
         <div class="card-title">Online Data Gathering Form</div>
         <div class="card-desc">Sent after payment confirmation to drive DGF submission within 48 hours.</div>
         <div class="card-trigger"><strong>Trigger:</strong> Payment confirmed (or account created for Demo/Partner)</div>
@@ -639,6 +646,7 @@
       </div>
       <div class="card-body">
         <div class="card-number">Email 03</div>
+        <div class="mail-subject"><span style="color: #6B6560;">Email-Subject:</span> Your setup is paused. Here is why?</div>
         <div class="card-title">DGF Reminder</div>
         <div class="card-desc">Re-engages a hotelier who has not submitted the DGF. Dark design distinguishes it from Email 2.</div>
         <div class="card-trigger"><strong>Trigger:</strong> Manual re-share (recommend: auto 72h after Email 2)</div>
@@ -662,6 +670,7 @@
       </div>
       <div class="card-body">
         <div class="card-number">Email 04</div>
+        <div class="mail-subject"><span style="color: #6B6560;">Email-Subject:</span> You have done your part. We will take it from here.</div>
         <div class="card-title">Submission Acknowledgement</div>
         <div class="card-desc">Instant confirmation after DGF submit. Eliminates anxiety and sets configuration expectations.</div>
         <div class="card-trigger"><strong>Trigger:</strong> DGF submitted (webhook, zero delay)</div>
@@ -685,6 +694,7 @@
       </div>
       <div class="card-body">
         <div class="card-number">Email 05A</div>
+        <div class="mail-subject"><span style="color: #6B6560;">Email-Subject:</span> Bookmark this email. Your entire team will need these credentials.</div>
         <div class="card-title">Hotel PMS Login Credentials</div>
         <div class="card-desc">Delivers PMS access details with clear role separation: Admin, Front Desk, Mobile, Booking Engine.</div>
         <div class="card-trigger"><strong>Trigger:</strong> Hotel PMS account creation complete</div>
@@ -708,6 +718,7 @@
       </div>
       <div class="card-body">
         <div class="card-number">Email 05B</div>
+        <div class="mail-subject"><span style="color: #6B6560;">Email-Subject:</span> Your F&amp;B command centre is live.</div>
         <div class="card-title">Restaurant POS Login Credentials</div>
         <div class="card-desc">POS credentials for F&amp;B operations. Orange gradient hero visually distinguishes it from 5A.</div>
         <div class="card-trigger"><strong>Trigger:</strong> Restaurant POS account creation complete</div>
@@ -731,6 +742,7 @@
       </div>
       <div class="card-body">
         <div class="card-number">Email 06</div>
+        <div class="mail-subject"><span style="color: #6B6560;">Email-Subject:</span> Confirm your recovery email.</div>
         <div class="card-title">Recovery Email Verification</div>
         <div class="card-desc">Minimal security email. One-time link expires in 60 minutes. No marketing, no noise.</div>
         <div class="card-trigger" style="background:#FFF3F0;"><strong style="color:#c0392b;">Trigger:</strong> <span style="color:#c0392b;">Unconfirmed — requires dev input</span></div>
