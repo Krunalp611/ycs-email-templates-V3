@@ -130,6 +130,7 @@
     gap: 6px;
     text-decoration: none;
     cursor: pointer;
+    padding: 10px;
   }
 
   .flow-circle {
@@ -566,6 +567,13 @@
   <div class="section-label">Email Sequence</div>
   <div class="flow-bar">
     <div class="flow-step">
+      <div class="flow-node" onclick="openModal('v3-email-01-welcomeaboard.html', 'Email 1 — Onboard')">
+        <div class="flow-circle">1</div>
+        <div class="flow-label">Onboard</div>
+      </div>
+    </div>
+    <div class="flow-arrow"></div>
+    <div class="flow-step">
       <div class="flow-node" onclick="openModal('v3-email-02-dgf-form.html', 'Email 2 — DGF Form')">
         <div class="flow-circle">2</div>
         <div class="flow-label">DGF Form</div>
@@ -588,7 +596,7 @@
     <div class="flow-arrow"></div>
     <div class="flow-step">
       <div class="flow-node" onclick="openModal('v3-email-05a-pms-login.html', 'Email 5A — Hotel PMS Login')">
-        <div class="flow-circle" style="background:#1A1A1A;">5A</div>
+        <div class="flow-circle" style="">5A</div>
         <div class="flow-label">PMS Login</div>
       </div>
     </div>
@@ -613,6 +621,30 @@
 <div class="grid-section" style="margin-top:40px;">
   <div class="section-label">All Templates</div>
   <div class="grid">
+
+    <!-- EMAIL 1 -->
+    <div class="card" onclick="openModal('v3-email-01-welcomeaboard.html', 'Email 2 — DGF Form')">
+      <div class="card-preview preview-02">
+        <iframe src="v3-email-01-welcomeaboard.html" style="transform:scale(0.255);transform-origin:top center;width:620px;height:700px;" scrolling="no" tabindex="-1"></iframe>
+        <div class="card-badge">Email 01</div>
+      </div>
+      <div class="card-body">
+        <div class="card-number">Email 01</div>
+        <div class="mail-subject"><span style="color: #6B6560;">Email-Subject:</span> Your Onboarding Starts Now</div>
+        <div class="card-title">Welcome Aboard Form</div>
+        <div class="card-desc">30 minutes to make the best hotel in town.</div>
+        <div class="card-trigger"><strong>Trigger:</strong> Assigned a dedicated Account Manager for Your Hotel.</div>
+        <div class="card-tags">
+          <span class="tag">Orange Hero</span>
+          <span class="tag">Kick off call</span>
+          <span class="tag">24/7 Support</span>
+        </div>
+        <div class="card-cta">
+          <a class="btn-view" href="v3-email-01-welcomeaboard.html" target="_blank" onclick="event.stopPropagation()">Open Full</a>
+          <a class="btn-dl" href="v3-email-01-welcomeaboard.html" download onclick="event.stopPropagation()">Download</a>
+        </div>
+      </div>
+    </div>
 
     <!-- EMAIL 2 -->
     <div class="card" onclick="openModal('v3-email-02-dgf-form.html', 'Email 2 — DGF Form')">
